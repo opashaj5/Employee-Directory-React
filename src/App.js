@@ -1,10 +1,20 @@
-import HomePage from "./components/HomePage";
-import "./App.css";
+import './App.css'
+import { Route, Routes } from "react-router-dom";
+import EmployeePage from "./components/EmployeePage"
+import { useState } from "react";
+import EmployeeHomePage from './pages/EmployeeList';
 
-export default function App() {
-  return (
+export default function App (){
+  const [employeeInfo, setEmployeeInfo] = useState({})
+  const getEmployee = (data) => {
+  setEmployeeInfo(data)
+}
+return (
     <div className="App">
-      <HomePage />
+        <Routes>
+            <Route path="/" element={<EmployeeHomePage getInfo = {getEmployee} />}/>
+            <Route path="/:id" element={<EmployeePage info={employeeInfo}/>}/>
+        </Routes>
     </div>
-  );
+)
 }

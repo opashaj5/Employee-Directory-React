@@ -4,7 +4,7 @@ import React from 'react';
 export default function EmployeeListItem(props) {
     return (
         <>
-            <Link onClick={() => { getInfo(employee) }} to={`/:${name}`}>
+            <Link onClick={() => { getInfo(employee) }} to={`/:${props.name}`}>
                 <div className="employeeListItem">
                     <img src={props.img} alt={props.title} />
                     <div>

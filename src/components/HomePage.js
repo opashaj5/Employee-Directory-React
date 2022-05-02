@@ -5,6 +5,7 @@ import EmployeeList from "./EmployeeList";
 import employeeArr from "../data";
 
 const listItem = employeeArr.map((ele, idx) => {
+    const employee = { img, name, title }
     return (
         <EmployeeList
             className="employeeList"
