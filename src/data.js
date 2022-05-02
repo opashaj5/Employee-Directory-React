@@ -5,7 +5,7 @@ export default [
         title: "Chef",
         office: "781-000-0001",
         mobile: "617-000-0001",
-        SMS: "617-000-0001",
+        sms: "617-000-0001",
         email: "monica@fakeemail.com"
     },
     {
@@ -15,7 +15,7 @@ export default [
         title: "Fashion Executive",
         office: "781-000-0002",
         mobile: "617-000-0002",
-        SMS: "617-000-0002",
+        sms: "617-000-0002",
         email: "rachel@fakeemail.com"
     },
     {
@@ -25,7 +25,7 @@ export default [
         title: "Masseuse/Musician",
         office: "781-000-0002",
         mobile: "617-000-0002",
-        SMS: "617-000-0002",
+        sms: "617-000-0002",
         email: "phoebe@fakeemail.com"
     },
     {
@@ -35,7 +35,7 @@ export default [
         title: "Paleontologist/Professor",
         office: "781-000-0004",
         mobile: "617-000-0004",
-        SMS: "617-000-0004",
+        sms: "617-000-0004",
         email: "ross@fakeemail.com"
     },
     {
@@ -45,7 +45,7 @@ export default [
         title: "Actor",
         office: "781-000-0005",
         mobile: "617-000-0005",
-        SMS: "617-000-0005",
+        sms: "617-000-0005",
         email: "joey@fakeemail.com"
     },
     {
@@ -55,7 +55,7 @@ export default [
         title: "IT Procurement/Advertising Copywriter",
         office: "781-000-0006",
         mobile: "617-000-0006",
-        SMS: "617-000-0006",
+        sms: "617-000-0006",
         email: "chandler@fakeemail.com"
     }
 ];
