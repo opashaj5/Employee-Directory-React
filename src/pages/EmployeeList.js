@@ -4,7 +4,7 @@ import EmployeeList from "../components/EmployeeList";
 import employeeArr from "../data";
 import EmployeeListItem from "../components/EmployeeListItem";
 
-export default function EmployeeHomePage(props) {
+export default function EmployeeShow(props) {
     return (
         <div className="homepage">
             <Header title="Employee List" />
