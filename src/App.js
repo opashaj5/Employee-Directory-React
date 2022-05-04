@@ -2,7 +2,7 @@ import './App.css'
 import { Route, Routes } from "react-router-dom";
 import EmployeePage from "./components/EmployeePage"
 import { useState } from "react";
-import EmployeeHomePage from './pages/EmployeeList';
+import EmployeeShow from './pages/EmployeeList';
 
 export default function App() {
     const [employeeInfo, setEmployeeInfo] = useState({})

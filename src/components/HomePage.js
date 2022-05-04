@@ -1,28 +1,19 @@
 import Header from "./Header";
 import SearchBar from "./SearchBar";
 import EmployeeList from "./EmployeeList";
-// import EmployeeListItem from "./EmployeeListItem";
+import EmployeeListItem from "./EmployeeListItem";
 import employeeArr from "../data";
-
-const listItem = employeeArr.map((ele, idx) => {
-    const employee = { img, name, title }
-    return (
-        <EmployeeList
-            className="employeeList"
-            key={idx}
-            img={ele.img}
-            name={ele.name}
-            title={ele.title}
-        />
-    );
-});
 
 export default function HomePage(props) {
     return (
-        <div className="homepage">
+        <div className="home-page">
             <Header />
             <SearchBar />
-            <section className="EmployeeList">{listItem}</section>
+            <EmployeeList >
+                {employeeArr.map((listItem, idx) => {
+                    return <EmployeeListItem getInfo={props.getInfo}{...listItem} key={idx} />
+                })}
+            </EmployeeList>
         </div>
     );
-}
+};

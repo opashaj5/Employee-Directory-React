@@ -1,3 +1,7 @@
 export default function Header() {
-    return <h2>Employee Directory</h2>;
-}
+    return (
+        <div className="header-text">
+            <h2>Employee Directory</h2>
+        </div>
+    );
+};

@@ -52,7 +52,7 @@ export default [
         img:
             "https://www.estrelando.com.br/uploads/2017/03/31/chandler-1490986209.jpg",
         name: "Chandler Bing",
-        title: "IT Procurement/Advertising Copywriter",
+        title: "Advertising Copywriter",
         office: "781-000-0006",
         mobile: "617-000-0006",
         sms: "617-000-0006",

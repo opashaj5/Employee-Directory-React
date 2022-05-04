@@ -1,27 +1,37 @@
-import Header from "./Header";
-import { Link } from "react-router-dom";
-
 export default function EmployeePage(props) {
     return (
-        <>
-            <div>
-                <div>
-                    <div className="show-card">
-                        <h3>Employee</h3>
-                        <div>
-                            <img src={props.img} alt={props.name} />
-                        </div>
-                        <div>
-                            <h3>{props.name}</h3>
-                            <h3>{props.title}</h3>
-                            <h3>{props.office}</h3>
-                            <h3>{props.mobile}</h3>
-                            <h3>{props.sms}</h3>
-                            <h3>{props.email}</h3>
-                        </div>
-                    </div>
-                </div>
+        <div className="employeePage">
+            <header>
+                <a href="/" className="back-arrow">&#8249;</a>
+                Employee
+            </header>
+            <div className="employeeDetails">
+                <ul>
+                    <li>
+                        <img src={props.info.img} className="image" />
+                        <h5>{props.info.name}</h5>
+                        <p>{props.info.title}</p>
+                    </li>
+                    <li>
+                        <h5>Call Office</h5>
+                        <p>{props.info.office}</p>
+                        <a href="#" className="next-arrow">&#8250;</a>
+                    </li>
+                    <li>
+                        <h5>Call Mobile</h5>
+                        <p>{props.info.mobile}</p>
+                        <a href="#" className="next-arrow">&#8250;</a>
+                    </li>
+                    <li>
+                        <h5>SMS</h5>
+                        <p>{props.info.sms}</p>
+                        <a href="#" className="next-arrow">&#8250;</a>
+                    </li>
+                    <h5>Email</h5>
+                    <p>{props.info.email}</p>
+                    <a href="#" className="next-arrow">&#8250;</a>
+                </ul>
             </div>
-        </>
+        </div >
     )
 }
